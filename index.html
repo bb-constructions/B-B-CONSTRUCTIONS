@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>B&B CONSTRUCTIONS</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://www.nepalyp.com/img/cats/construction.jpg') no-repeat center center/cover;
+      height: 70vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Fade In and Slide Up Animation */
+    .animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: 0.6s ease-out;
+    }
+
+    .animate.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Contact Section Styles */
+    .contact-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 60px 20px;
+      margin: 40px auto;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .contact-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3em;
+      color: #222;
+    }
+
+    .contact-card a {
+      display: block;
+      color: #222;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .contact-card a:hover {
+      color: #007BFF;
+    }
+
+    .contact-card input,
+    .contact-card textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Team Section Styles */
+    #team {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .team-card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .team-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: #222;
+    }
+
+    .team-card p {
+      color: #666;
+      font-size: 1.1em;
+    }
+
+    .team-card:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #007BFF;
+      border-radius: 12px 12px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>B&B CONSTRUCTIONS</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#team">Our Team</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>We Build Your Dreams</h1>
+</div>
+
+<section id="about" class="animate">
+  <h2>About Us</h2>
+  <p>We are a leading construction company delivering world-class projects with safety, innovation, and reliability.</p>
+  <div class="team-info">
+    <p><strong>Proprietor:</strong> Indrajit Yadav.</p>
+    <p><strong>Engineer:</strong> Abhishek Aman Yadav.</p>
+  </div>
+</section>
+
+<section id="services" class="services animate">
+  <div class="service">
+    <h3>Residential</h3>
+    <p>From homes to villas, we bring your living space to life.</p>
+  </div>
+  <div class="service">
+    <h3>Commercial</h3>
+    <p>Office buildings, retail outlets, and more—built to last.</p>
+  </div>
+  <div class="service">
+    <h3>Renovation</h3>
+    <p>Revamp your existing structures with our expert touch.</p>
+  </div>
+</section>
+
+<section id="team" class="animate">
+  <h2>👷‍♂️ Meet Our Team</h2>
+  <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
+    <div class="team-card">
+      <h3>Indrajit Yadav</h3>
+      <p>🏗️ Proprietor</p>
+    </div>
+    <div class="team-card">
+      <h3>Abhishek Aman Yadav</h3>
+      <p>👷‍♂️ Civil Engineer</p>
+    </div>
+    <div class="team-card">
+      <h3>Aman Mallik</h3>
+      <p>💻 Web Designer</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="animate contact-section">
+  <h2>📞 Get in Touch</h2>
+  <div class="contact-cards">
+    <div class="contact-card">
+      <h3>Phone</h3>
+      <p><a href="tel:9804562614">📱 9804562614</a></p>
+      <p><a href="tel:9704831051">📞 9704831051</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>Message Us</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 B&B CONSTRUCTIONS. All rights reserved.</p>
+  <p>Call us: <a href="tel:9804562614">9804562614</a></p>
+</footer>
+
+<script>
+  // Scroll animation
+  const animateElements = document.querySelectorAll('.animate');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  animateElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
